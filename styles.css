@@ -424,7 +424,7 @@ QUALITY WORK ↓
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -438,7 +438,6 @@ QUALITY WORK ↓
     display: flex;
     flex-direction: column;
     justify-content: space-between;         
-    width: 100%;
 }
 
 .quality__description--title {
