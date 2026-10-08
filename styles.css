@@ -457,15 +457,30 @@ QUALITY WORK ↓
 }
 
 .quality__img--wrapper {
-  margin: 0;
+  margin: 0 56px;
   border: 1px solid rgb(229, 231, 235);
   border-radius: 4px;
-  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .quality__img {
-  display: block;
+  z-index: 1;
   width: 100%;
+}
+
+.quality__grid {
+  transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity)1);
+  z-index: -1;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -504,6 +519,7 @@ STEPS ↓
   width: 100%;
   margin: 0;
   border-radius: 4px;
+  z-index: 2;
 }
 
 .steps__description, .steps__img--wrapper {
@@ -515,6 +531,19 @@ STEPS ↓
 .steps__img--wrapper {
   display: flex;
   position: relative;
+}
+
+.steps__grid {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
+  z-index: -10;
+  color: rgb(100, 21, 255);
+  fill: currentColor;
 }
 
 .steps__description {
@@ -889,6 +918,8 @@ TESTIMONIALS ↓
 #testimonials .row {
   display: flex;
 }
+
+
 
 /* 
 
