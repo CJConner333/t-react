@@ -646,12 +646,12 @@ VALUES ↓
   align-items: center;
 }
 
-.value:nth-child(1), .value__img--wrapper {
-  background-color: #9ae6b4;
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
 }
 
-.value:nth-child(2), .value__image--wrapper {
-  background-color: #feb2b2;
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
 }
 
 .value__img--wrapper {
