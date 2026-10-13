@@ -478,7 +478,7 @@ QUALITY WORK ↓
   bottom: 0px;
   fill: rgb(100, 21, 255);
   --tw-text-opacity: 1;
-  color: rgba(100, 21, 255, var(--tw-text-opacity)1);
+  color: rgba(100, 21, 255);
   z-index: -2;
   display: block;
 }
@@ -940,7 +940,7 @@ TESTIMONIALS ↓
 .section__title {
   font-size: 48px;
   font-weight: 900;
-  color: rbg(36, 62, 99);
+  color: rgb(36, 62, 99);
   line-height: 1.5;
   margin: 16px 0;
   letter-spacing: 0.025em;
@@ -987,7 +987,7 @@ TESTIMONIALS ↓
 
 .fa-star {
   color: rgb(246 173 85);
-  display: inline block;
+  display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
 }
@@ -1256,7 +1256,7 @@ a {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
-  aligh-items: center;
+  align-items: center;
 }
 
 .footer__logo {
@@ -1305,7 +1305,7 @@ a {
   text-decoration: none;
 }
 
-path[Attributes Style] {
+path Attributes Style {
     d: path("M 14 13.5 h 2.5 l 1 -4 H 14 v -2 c 0 -1.03 0 -2 2 -2 h 1.5 V 2.14 c -0.326 -0.043 -1.557 -0.14 -2.857 -0.14 C 11.928 2 10 3.657 10 6.7 v 2.8 H 7 v 4 h 3 V 22 h 4 v -8.5 Z");
 }
 
@@ -1314,7 +1314,7 @@ path[Attributes Style] {
   width: 16px;
 }
 
-svg[Attributes Style] {
+svg Attributes Style {
     fill: currentcolor;
 }
 
