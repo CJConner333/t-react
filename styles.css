@@ -1436,7 +1436,11 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   .header__img { width: 100%; margin: 0; padding: 16px; display: block; }
 
   /* Features */
-  .features__cards {
+  .features__cards { 
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
     display: flex !important;
     flex-direction: column !important;
     gap: 24px;
@@ -1448,7 +1452,12 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
     margin: 0;
     position: relative !important; 
   }
-  .features__card--img { position: relative !important; margin: 0 auto 12px !important; transform: none !important; }
+  .features__card--img { 
+    position: relative !important; 
+    padding-left:  !important; 
+    margin: 0 auto 15px !important; 
+    transform: none !important; } 
+
 
   #quality .row, #steps .row, #values .row, #testimonials .row { flex-direction: column !important; gap: 24px !important; }
   .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img { width: 100% !important; margin: 0; padding: 0; }
