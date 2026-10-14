@@ -1821,7 +1821,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   #testimonials .testimonial__img { width: 40px; height: 40px; }
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
  #start .start__row {
     display: flex;
     flex-direction: column;
@@ -1863,7 +1863,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
 
   #start .start__button {
     width: calc(100% - 2rem);
-    max-widht: 420px;
+    max-width: 420px;
   }
 
 }
