@@ -1436,7 +1436,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   .header__img { width: 100%; margin: 0; padding: 16px; display: block; }
 
   /* Features */
-  .features__cards { 
+  .features__cards {  
     text-align: center;
     margin: 0 auto;
     position: relative;
@@ -1444,20 +1444,59 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
     display: flex ;
     flex-direction: column ;
     gap: 24px;
-    align-items: stretch;
+    align-items: stretch; 
   }
-  .features__card {
-    width: 100% ;
-    max-width: 100% ;
-    margin: 0;
-    position: relative ; 
-  }
-  .features__card--img { 
-    position: relative ; 
-    padding-left:  ; 
-    margin: 0 auto 15px ; 
-    transform: none ; } 
 
+  #features .features__card {
+    width: calc(100% - 2rem);
+    max-width: none;
+    margin: 0 auto 1rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #features .features__card--img {
+    position: static; /* override any absolute positioning */
+    left: auto;
+    right: auto;
+    transform: none;
+    display: block;
+    margin: 0 auto 0.75rem;
+    width: 72px;   /* adjust size as you prefer */
+    height: 72px;
+    padding: 0.6rem; /* keep circular padding if desired */
+    box-sizing: border-box;
+  }
+
+
+  #features .features__card--img {
+    position: static; /* override any absolute positioning */
+    left: auto;
+    right: auto;
+    transform: none;
+    display: block;
+    margin: 0 auto 0.75rem;
+    width: 72px;   /* adjust size as you prefer */
+    height: 72px;
+    padding: 0.6rem; /* keep circular padding if desired */
+    box-sizing: border-box;
+  }
+
+  #features .features__card--title {
+    transform: none;
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+
+  #features .features__card--para {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 0.75rem;    /* small horizontal gutters for readability */
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   #quality .row, #steps .row, #values .row, #testimonials .row { flex-direction: column ; gap: 24px ; }
   .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img { width: 100% ; margin: 0; padding: 0; }
@@ -1538,8 +1577,11 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
     width: 100%;
     max-width: 320px;
     box-sizing: border-box;
+  } 
+
+  .start__button:nth-child(1) {
+    margin-right: 5px;
   }
-} 
 
 #testimonials,
 #testimonials .row,
@@ -1547,27 +1589,28 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   width: 100%;
   box-sizing: border-box;
   padding: 12px 0;
-}
+  }
 
 .testimonials__description {
   max-width: 600;
   margin: 0 auto;
-}
+  }
 
 .testimonial__name, .testimonial__role {
   margin-left: 12px;
-}
+  }
+
 .testimonial__para {
   margin: 0 0 12px 0;
   line-height: 1.6;
   word-break: normal;
   white-space: normal;
-}
+  }
 
 .testimonial__name {
   padding-bottom: 32px;
   justify-content:;
-}
+  }
 
 .testimonial__bottom {
   display: flex;
@@ -1577,7 +1620,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   width: 100%;
   box-sizing: border-box;
   padding-top: 8px;
-}
+  }
 
 .testimonial__profile {
   display: flex;
@@ -1585,7 +1628,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   gap: 12px;
   flex: 1 1 auto;   
   min-width: 0;     
-}
+  }
 
 .testimonial__profile .testimonial__img,
 .testimonial__img {
@@ -1595,12 +1638,12 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   object-fit: cover;
   border-radius: 50%;
   display: block;
-}
+  }
 
 .testimonial__details {
   flex: 1 1 auto;
   min-width: 0;
-}
+  }
 
 .testimonial__name,
 .testimonial__role {
@@ -1608,14 +1651,14 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   overflow: visible;
   text-overflow: unset;
   display: block;
-}
+  }
 
 .testimonial__buttons {
   display: flex;
   gap: 8px;
   align-items: center;
   flex: 0 0 auto; 
-}
+  }
 
 .testimonial__button {
   width: 36px;
@@ -1627,6 +1670,7 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
   border-radius: 8px;
   background: transparent;
   box-sizing: border-box;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1643,4 +1687,183 @@ MOBILE RESPONSIVENESS GENERAL RULES ↓
     width: 100%;
   }
   .divider { display: none; }
+}
+
+@media (max-width: 480px) {
+  #features .features__card--img {
+    width: 64px;
+    height: 64px;
+    padding: 0.5rem;
+  }
+  #features .features__card--para {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+}
+
+/* Testimonials - Mobile/Tablet */
+
+@media (max-width: 768px) {
+
+  #testimonials .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #testimonials .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px; 
+  }
+
+  #testimonials .testimonials__img {
+    width: 80%;
+    max-width: 420px;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  #testimonials .testimonials__description {
+    width: 100%;
+    max-width: 720px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #testimonials .testimonial {
+    margin-top: 12px;   /* smaller than desktop */
+    padding: 0;
+  }
+
+  #testimonials .testimonial__title {
+    margin: 0.4rem 0 0.35rem;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.05rem;
+  }
+
+   #testimonials .testimonial__para {
+    margin: 0.25rem 0;
+    padding: 0 6px;       
+    text-align: center;   
+    line-height: 1.5;
+    color: #6b778a;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: none;      
+  }
+
+  #testimonials .testimonial__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  #testimonials .testimonial__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+
+  #testimonials .testimonial__img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #testimonials .testimonial__buttons {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #testimonials .testimonial__rating {
+    margin-top: 0;
+    margin-right: 6px;
+  }
+
+  #testimonials .section__title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  #testimonials .section__para {
+    font-size: 15px;
+    margin-bottom: 8px;
+    line-height: 1.45;
+  }
+}
+
+/* Testimonials very small phones */
+@media (max-width: 480px) {
+  #testimonials .container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  #testimonials .testimonials__img {
+    width: 90%;
+    max-width: 360px;
+  }
+  #testimonials .testimonial__title { font-size: 1rem; }
+  #testimonials .testimonial__para { font-size: 0.97rem; padding: 0 8px; }
+  #testimonials .testimonial__img { width: 40px; height: 40px; }
+}
+
+@media (max-width: 768) {
+ #start .start__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  #start .start__title {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    order: 0;
+  }
+
+  #start .start__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    order: 1;
+    margin: 0 auto;
+  }
+
+  #start .start__button {
+    min-width: 140px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  #start .start__buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #start .start__button {
+    width: calc(100% - 2rem);
+    max-widht: 420px;
+  }
+
 }
