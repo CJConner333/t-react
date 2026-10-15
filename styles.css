@@ -1647,6 +1647,48 @@ svg Attributes Style {
     margin-left: 0px;
   }
 }
+
+/*@media (min-width: 769px) and (max-width: 1023px){
+  .features__cards {
+   display: grid;
+   grid-template-columns: repeat(2,minmax(0, 320px));
+   grid-template-rows: repeat(3, auto);
+   justify-content: center;
+   grid-auto-flow: column;
+   grid-auto-rows: auto;
+   gap: 24px;
+   align-items: start;
+   box-sizing: border-box;
+  }
+
+  .features__card {
+    display: block;
+    flex: none;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .features__card--img {
+    position: relative !important;
+    display: block !important;
+    margin: 0 auto 15px !important;
+    transform: none;
+  }
+
+  .features__card--title {
+    transform: none !important;
+    text-align: center;
+  }
+
+  .features__card--para {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+}*/
+
 @media (max-width: 640px) {
   .section__title {
     line-height: 1.25;
